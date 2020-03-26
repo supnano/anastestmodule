@@ -28,16 +28,14 @@ cache:
     - .m2/repository
     - target/
 
-# For merge requests do not `deploy` but only run `verify`.
-# See https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html
-.verify: &verify
+build:
+  stage: build
+  script:
+    - mvn $MAVEN_CLI_OPTS compile
+
+test:
   stage: test
   script:
-    - 'mvn $MAVEN_CLI_OPTS verify'
-  except:
-    - master
+    - mvn $MAVEN_CLI_OPTS test
 
-# Verify merge requests using JDK8
-verify:jdk8:
-  <<: *verify
 
