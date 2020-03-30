@@ -60,7 +60,13 @@
     <version>1.0-SNAPSHOT</version>    
     <packaging>bundle</packaging>
     <description>This is the custom module (AnasTestModule) for running on a Digital Experience Manager server.</description>
-
+	<distributionManagement>
+	   <repository>
+	     <id>github</id>
+	     <name>GitHub OWNER Apache Maven Packages</name>
+	     <url>https://maven.pkg.github.com/supnano/makheia</url>
+	   </repository>
+	</distributionManagement>
     <scm>
         <connection>scm:dummy:uri</connection>
         <developerConnection>scm:dummy:uri</developerConnection>
