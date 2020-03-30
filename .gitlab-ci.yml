@@ -31,11 +31,15 @@ cache:
 build:
   stage: build
   script:
-    - mvn $MAVEN_CLI_OPTS compile
+    - mvn $MAVEN_CLI_OPTS package
 
-test:
-  stage: test
+before_script:
+  - apt-get update -qy
+  - apt-get install -y lftp
+  
+deploy:
+  stage: deploy
   script:
-    - mvn $MAVEN_CLI_OPTS test
+    - lftp -e "open $FTP_HOST; user $FTP_USERNAME $FTP_PASSWORD; mput -e ./target/*.jar; bye"
 
 
