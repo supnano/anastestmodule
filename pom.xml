@@ -21,12 +21,12 @@
 	   <repository>
 	     <id>github</id>
 	     <name>GitHub OWNER Apache Maven Packages</name>
-	     <url>https://maven.pkg.github.com/supnano</url>
+	     <url>https://maven.pkg.github.com/supnano/anastestmodule</url>
 	   </repository>
 	   <snapshotRepository>
 	     <id>github</id>
 	       <name>GitHub OWNER Apache Maven Packages</name>
-	       <url>https://maven.pkg.github.com/supnano</url>
+	       <url>https://maven.pkg.github.com/supnano/anastestmodule</url>
 	   </snapshotRepository>
 	</distributionManagement>
 
