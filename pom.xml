@@ -23,14 +23,13 @@
 	     <name>GitHub OWNER Apache Maven Packages</name>
 	     <url>https://maven.pkg.github.com/supnano/makheia</url>
 	   </repository>
-	</distributionManagement>
-	<snapshotRepository>
-	   <repository>
+	   <snapshotRepository>
 	     <id>github</id>
-	     <name>GitHub OWNER Apache Maven Packages</name>
-	     <url>https://maven.pkg.github.com/supnano/makheia</url>
-	   </repository>
-	</snapshotRepository>
+	       <name>GitHub OWNER Apache Maven Packages</name>
+	       <url>https://maven.pkg.github.com/supnano/makheia</url>
+	   </snapshotRepository>
+	</distributionManagement>
+
     <scm>
         <connection>scm:dummy:uri</connection>
         <developerConnection>scm:dummy:uri</developerConnection>
