@@ -33,9 +33,9 @@ jobs:
       uses: actions/upload-artifact@v1
       with:
         name: anastestmodulePackage
-        path: target/anastestmodule*.jar
+        path: target/anastestmodule-1.0-SNAPSHOT.jar
 
-    - name: Publish to GitHub Packages Apache Maven
-      run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
-      env:
-        GITHUB_TOKEN: ${{ github.token }}
+    #- name: Publish to GitHub Packages Apache Maven
+     # run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
+     # env:
+     #   GITHUB_TOKEN: ${{ github.token }}
