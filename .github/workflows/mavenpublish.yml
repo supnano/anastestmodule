@@ -33,7 +33,7 @@ jobs:
       uses: actions/upload-artifact@v1
       with:
         name: anastestmodulePackage
-        path: ./target/*-1.0-SNAPSHOT.jar
+        path: target/*-1.0-SNAPSHOT.jar
 
     #- name: Publish to GitHub Packages Apache Maven
      # run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
